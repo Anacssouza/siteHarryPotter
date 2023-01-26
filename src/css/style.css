@@ -1,5 +1,12 @@
+@font-face {
+  font-family: Harry P;
+  src: url(../fonts/HarryP-MVZ6w.ttf);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -40,6 +47,7 @@ body {
   align-items: center;
   height: calc(100vh - 132px);
   padding: 0 30px 30px;
+ 
 }
 
 .container .title-image {
@@ -49,7 +57,7 @@ body {
 .container .description {
   color: #a8adb7;
   width: 85%;
-  font-size: 18px;
+  font-size: 15px;
   margin: 20px 0;
 }
 
@@ -138,14 +146,39 @@ body {
   visibility: visible;
 }
 
-section{
-  background-color: black;
+section#movies{
   color: aliceblue;
-  overflow: hidden;
+  padding: 21px;
+  max-width: 1040px;
+  margin: 40px auto;
 }
 
-.filmes{
+section#movies h2 {
+  margin-bottom: 40px;
+  font-family: Harry P;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.movies {
   display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 45% 45%;
+  gap: 50px;
+  align-items:center;
+  max-width: 80%;
+  text-align: center;
+  
+  
 }
 
+.movies img {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  -webkit-box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
+  -moz-box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
+  box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
+  
+}
 
