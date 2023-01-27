@@ -150,7 +150,7 @@ section#movies{
   color: aliceblue;
   padding: 21px;
   max-width: 1040px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 section#movies h2 {
@@ -168,8 +168,6 @@ section#movies h2 {
   align-items:center;
   max-width: 80%;
   text-align: center;
-  
-  
 }
 
 .movies img {
@@ -179,6 +177,40 @@ section#movies h2 {
   -webkit-box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
   -moz-box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
   box-shadow: 0px -1px 126px -61px rgba(252,252,252,1);
-  
 }
 
+
+.casa {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 45%;
+  gap: 50px;
+  align-items:center;
+  max-width: 80%;
+  text-align: center;
+}
+
+.casas img{
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+section#casas{
+  color: aliceblue;
+  padding: 0 21px;
+  max-width: 1040px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+section#casas h2 {
+  font-family: Harry P;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+section#casas p {
+  margin-bottom: 100px;
+}
