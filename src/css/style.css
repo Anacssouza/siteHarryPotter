@@ -3,10 +3,17 @@
   src: url(../fonts/HarryP-MVZ6w.ttf);
 }
 
+:root{
+  --primary-color: rgb(221, 175, 48);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+
 }
 
 .header {
@@ -29,7 +36,7 @@ body {
 
 .header nav li a {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 50px;
@@ -37,7 +44,7 @@ body {
 }
 
 .header nav li a:hover {
-  color: yellow;
+  color: var(--primary-color);
 }
 
 .container {
@@ -65,14 +72,15 @@ body {
   max-width: 500px;
 }
 
-.container .button {
-  background-color: yellow;
+.container .button, .ondeAssistir .button {
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 15px;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   border: none;
+  border-radius: 10px;
   transition: 0.4s all ease-in-out;
 }
 
@@ -147,10 +155,11 @@ body {
 }
 
 section#movies{
-  color: aliceblue;
+  color: #a8adb7;
   padding: 21px;
   max-width: 1040px;
   margin: 0 auto;
+  
 }
 
 section#movies h2 {
@@ -158,6 +167,7 @@ section#movies h2 {
   font-family: Harry P;
   font-size: 50px;
   letter-spacing: 5px;
+
 }
 
 .movies {
@@ -196,21 +206,32 @@ section#movies h2 {
   height: 200px;
 }
 
-section#casas{
-  color: aliceblue;
+section#casas, section.ondeAssistir{
+  color: #a8adb7;
   padding: 0 21px;
   max-width: 1040px;
   margin: auto;
   margin-top: 100px;
+
 }
 
-section#casas h2 {
+section#casas h2, section.ondeAssistir h2 {
   font-family: Harry P;
   font-size: 50px;
   letter-spacing: 5px;
   margin-bottom: 30px;
 }
 
+.ondeAssistir .assistir{ 
+  color: #a8adb7;
+  display: flex;
+  height: 300px;
+}
+
 section#casas p {
   margin-bottom: 100px;
+}
+
+.ondeAssistir button {
+  margin-top: 50px;
 }
